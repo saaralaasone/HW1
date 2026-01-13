@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class LightSwitch : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public Light light;
+    public InputActionReference action;
+    void Start()
+    {
+        light = GetComponent<Light>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown("tab"))
+        {
+            light.color = Color.red;
+        }
+    }
+}
