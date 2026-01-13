@@ -1107,6 +1107,7 @@ GameObject:
   - component: {fileID: 285646979}
   - component: {fileID: 285646978}
   - component: {fileID: 285646977}
+  - component: {fileID: 285646981}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -1201,6 +1202,19 @@ Transform:
   - {fileID: 13042671}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285646981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285646976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219a173ca2fda2d4eb8de17538417d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 1
 --- !u!1 &401000902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,6 +1811,7 @@ GameObject:
   - component: {fileID: 1287781347}
   - component: {fileID: 1287781346}
   - component: {fileID: 1287781345}
+  - component: {fileID: 1287781349}
   m_Layer: 0
   m_Name: Plane (Wall 1)
   m_TagString: Untagged
@@ -1891,6 +1906,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1287781349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287781344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6079b39ae80367440b9541ac8e3dd252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: 11711766586467970, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &1375737368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2760,7 @@ GameObject:
   - component: {fileID: 1632720117}
   - component: {fileID: 1632720116}
   - component: {fileID: 1632720115}
+  - component: {fileID: 1632720118}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -2839,6 +2868,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1632720118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632720114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62784b129769d547bc3ae6127a2a69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1632720116}
+  action: {fileID: 5113088590926889233, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &1836022757
 GameObject:
   m_ObjectHideFlags: 0
