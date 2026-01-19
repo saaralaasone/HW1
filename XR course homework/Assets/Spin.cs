@@ -8,6 +8,6 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, degreesPerSecond * Time.deltaTime);
+        transform.Rotate(0f, degreesPerSecond * Time.deltaTime, 0f);
     }
 }
