@@ -6,20 +6,25 @@ using UnityEngine.InputSystem;
 
 public class LightSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Light light;
     public InputActionReference action;
     void Start()
     {
         light = GetComponent<Light>();
+        action.action.Enable();
+        action.action.performed += OnLightToggle();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnLightToggle(InputAction.CallbackContext ctx)
     {
-        if (Input.GetKeyDown("tab"))
-        {
+        if (light.color == Color.white)
             light.color = Color.red;
-        }
+        else
+            light.color = Color.white;
+    }
+    
+    void OnDestroy()
+    {
+        action.action.performed -= OnLightToggle;
     }
 }
