@@ -7,4 +7,5 @@ GitHub link:
 https://github.com/saaralaasone/HW1
 
 Part 3: More interesting room
-Outside of the room, I added a downloaded asset from TurboSquid (Shrek_Toilet.fbx). Added fbx-file and the texture folder into the Unity. I also used blender to create a simple fence which is also visible outside of the room. I added a free wood texture from freepik so that the fence would look like wood.
+
+Outside of the room, I added a downloaded asset from TurboSquid, Shrek Toilet. Added fbx-file and the texture folder into the Unity. I also used blender to create a simple fence which is also visible outside of the room. I added a free wood texture from freepik so that the fence would look like wood.
