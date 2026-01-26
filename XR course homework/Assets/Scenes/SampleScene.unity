@@ -1931,6 +1931,7 @@ GameObject:
   - component: {fileID: 1281788523}
   - component: {fileID: 1281788522}
   - component: {fileID: 1281788521}
+  - component: {fileID: 1281788524}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1985,6 +1986,20 @@ Transform:
   - {fileID: 976697970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281788524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281788520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cea04986c9ceec4ea931e075f8b3319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  externalViewPoint: {fileID: 1735016584}
+  action: {fileID: -631344258065148156, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &1287781344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,7 +2452,7 @@ Transform:
   m_GameObject: {fileID: 1735016583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 0, z: -30.94}
+  m_LocalPosition: {x: 0, y: 0, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2505,13 +2520,12 @@ MonoBehaviour:
 
     Button A - Exit program
 
-    Tab - Change light color
+    Button X - Change light color
 
-    ?
-    - Break out of this room
+    Button
+    Y - Break out of this room
 
 
-    Edit this as necessary
 
 
 

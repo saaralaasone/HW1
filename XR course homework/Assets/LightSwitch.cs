@@ -12,11 +12,17 @@ public class LightSwitch : MonoBehaviour
     void Start()
     {
         lights = GetComponent<Light>();
-        //action.action.Enable();
-        //action.action.performed += OnLightToggle();
+        action.action.Enable();
+        action.action.performed += (ctx) =>
+        {
+            if (lights.color == Color.white)
+                lights.color = Color.red;
+            else
+                lights.color = Color.white;
+        };
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown("tab"))
         {
@@ -25,5 +31,5 @@ public class LightSwitch : MonoBehaviour
             else
                 lights.color = Color.white;
         }
-    }
+    }*/
 }
