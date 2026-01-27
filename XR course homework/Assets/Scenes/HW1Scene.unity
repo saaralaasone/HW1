@@ -1262,6 +1262,7 @@ GameObject:
   - component: {fileID: 428669891}
   - component: {fileID: 428669896}
   - component: {fileID: 428669897}
+  - component: {fileID: 428669898}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -1957,7 +1958,34 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5025
-  m_Center: {x: 0, y: -2.7775998, z: 5.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &428669898
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428669889}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &543444272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3496,7 @@ MonoBehaviour:
     Button
     Y - Break out of this room
 
+    Side triggers - Grab the magnifying glass
 
 
 
@@ -3595,6 +3624,7 @@ GameObject:
   - component: {fileID: 1894639038}
   - component: {fileID: 1894639043}
   - component: {fileID: 1894639044}
+  - component: {fileID: 1894639045}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -4290,7 +4320,34 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5025
-  m_Center: {x: 0, y: -2.7775998, z: 5.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1894639045
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894639036}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1894683538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4302,17 +4359,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
@@ -4322,7 +4379,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89c92e07349a5af4db38e8ab0d3d6d00,
         type: 3}
