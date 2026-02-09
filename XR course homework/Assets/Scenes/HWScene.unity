@@ -2957,12 +2957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is just a test.
-
-    Add something fun here.
-
-
-'
+  m_text: Something
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3835,8 +3830,9 @@ GameObject:
   - component: {fileID: 1710226685}
   - component: {fileID: 1710226687}
   - component: {fileID: 1710226686}
+  - component: {fileID: 1710226688}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: LensCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3952,6 +3948,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1710226688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710226684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bc29f8c77b55944b39d5a7d7140424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 136320004}
+  lens: {fileID: 1894683539}
 --- !u!1 &1735016583
 GameObject:
   m_ObjectHideFlags: 0
