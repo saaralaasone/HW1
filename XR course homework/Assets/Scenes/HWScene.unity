@@ -5452,7 +5452,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'What is that?
+  m_text: 'Wait...
+
+    What is that?
 
 
 
