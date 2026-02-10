@@ -34,7 +34,9 @@ public class CustomGrab : MonoBehaviour
         {
             // Grab nearby object or the object in the other hand
             if (!grabbedObject)
+            {
                 grabbedObject = nearObjects.Count > 0 ? nearObjects[0] : otherHand.grabbedObject;
+            }
 
             if (grabbedObject)
             {
@@ -44,7 +46,9 @@ public class CustomGrab : MonoBehaviour
                 // grabbedObject.rotation = transform.rotation;
                 Vector3 deltaPos = transform.position - previousPosition;
                 Quaternion deltaRot = transform.rotation * Quaternion.Inverse(previousRotation);
-                grabbedObject.position += deltaPos;
+                Vector3 vector = grabbedObject.position - transform.position;
+                Vector3 rotVector = deltaRot * vector - vector;
+                grabbedObject.position += deltaPos + rotVector;
                 grabbedObject.rotation = deltaRot * grabbedObject.rotation;
             }
         }

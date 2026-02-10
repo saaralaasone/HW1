@@ -9,8 +9,11 @@ public class Magnifying : MonoBehaviour
     void LateUpdate()
     {
         transform.position = lens.position;
-        Vector3 dir = lens.position - mainCamera.position;
-        Vector3 target = lens.position + dir;
-        transform.LookAt(target, Vector3.up); //change to vector3.up or lens.up
+        //transform.rotation = lens.rotation;
+        //Vector3 dir = lens.position - mainCamera.position;
+        //Vector3 target = lens.position + dir;
+        //transform.LookAt(target, lens.up); //change to vector3.up or lens.up
+        Vector3 forward = (lens.position - mainCamera.position).normalized;
+        transform.rotation = Quaternion.LookRotation(forward, lens.up);
     }
 }
