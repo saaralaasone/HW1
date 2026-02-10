@@ -10,7 +10,9 @@ Outside of the room, I added a downloaded asset from TurboSquid, Shrek Toilet. I
 # HW 2
 Introduction to XR systems - homework 2 - The Scope and Grabbing
 
-Used the room from homework 1. In this build, a magnifying glass has been added. You should be able to look through the magnifying lens and see a zoomed in picture. A hidden object is also added which can only be seen through the magnifying lens. You can grab the magnifying glass with either of the controllers or even both of the controllers at the same time. When both controllers are grabbing the magnifying glass, the tranlations and rotations of the controllers are combined into one. 
+Used the room from homework 1. In this build, a magnifying glass has been added. You are able to look through the magnifying lens and see a zoomed in picture. A hidden object is also added which can only be seen through the magnifying lens. You can grab the magnifying glass with either of the controllers or even both of the controllers at the same time. When both controllers are grabbing the magnifying glass, the tranlations and rotations of the controllers are combined into one. So, if the controllers are moved or rotated in opposite directions, the magnifying glass stays in the same position.
+
+The magnifying glass has some issues that I cannot fix. When the magnifying glass is turned so that the lens points straight up or down, the image distorts. This can be seen from looking at the instruction wall. When the magnifying glass is turned so that the lens points straight up, all of the text is visible through the lens which is wrong. However, I do not know how to fix this issue.
  
 GitHub link:
 https://github.com/saaralaasone/HW1
